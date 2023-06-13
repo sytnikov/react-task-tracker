@@ -7,14 +7,17 @@ function App() {
     {
       id: 1,
       text: 'Meet the dentist',
+      day: 'Feb 5th at 2:30pm',
     },
     {
       id: 2,
       text: 'Clean the room',
+      day: 'Feb 6th at 6:30pm',
     },
     {
       id: 3,
       text: 'Do the shopping',
+      day: 'Feb 8th at 8:00pm',
     }
   ])
   
