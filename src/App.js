@@ -20,12 +20,17 @@ function App() {
       day: 'Feb 8th at 8:00pm',
     }
   ])
-  
+
+  // Delete Task function
+  const deleteTask = (id) => {
+    setTasks(tasks.filter((task) => task.id !== id));
+  }
+
   return (
     // you can have only one parent component (in this case it's div)
     <div className="container">
       <Header title="Task Tracker"/>
-      <Tasks tasks={tasks}/>
+      <Tasks tasks={tasks} onDelete={deleteTask}/>
     </div>
   );
 }
