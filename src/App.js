@@ -3,7 +3,8 @@ import Header from './components/Header';
 import Tasks from './components/Tasks';
 import AddTask from "./components/AddTask";
 
-function App() {
+const App = () => {
+  const [showAddTask, setShowAddTask] = useState(false);
   const [tasks, setTasks] = useState([
     {
       id: 1,
@@ -23,7 +24,7 @@ function App() {
       day: 'Feb 8th at 8:00pm',
       reminder: false
     }
-  ])
+  ]);
 
   // Add Task function
   const addTask = (task) => {
@@ -45,8 +46,8 @@ function App() {
   return (
     // you can have only one parent component (in this case it's div)
     <div className="container">
-      <Header title="Task Tracker" />
-      <AddTask onAdd={addTask}/>
+      <Header title="Task Tracker" onAdd={() => setShowAddTask(!showAddTask)}/>
+      {showAddTask && <AddTask onAdd={addTask}/>}
       {tasks.length > 0 ? <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder}/> : 'No tasks to show'}
     </div>
   );
