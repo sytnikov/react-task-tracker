@@ -1,21 +1,15 @@
 {
   "tasks": [
     {
-      "text": "Test Task",
-      "day": "Friday",
-      "reminder": true,
-      "id": 1
-    },
-    {
       "text": "Visit a dentist",
       "day": "Monday",
-      "reminder": false,
+      "reminder": true,
       "id": 2
     },
     {
       "text": "Write a post",
       "day": "Saturday June 6th 6pm",
-      "reminder": false,
+      "reminder": true,
       "id": 3
     }
   ]
