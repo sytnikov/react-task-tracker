@@ -2,15 +2,21 @@
   "tasks": [
     {
       "text": "Visit a dentist",
-      "day": "Monday",
+      "day": "Feb 6th at 10am",
       "reminder": true,
-      "id": 2
+      "id": 5
     },
     {
-      "text": "Write a post",
-      "day": "Saturday June 6th 6pm",
+      "text": "Volleyball training",
+      "day": "Feb 10th at 6pm",
       "reminder": true,
-      "id": 3
+      "id": 6
+    },
+    {
+      "text": "Friend's birthday",
+      "day": "Mar 3rd at 7pm",
+      "reminder": false,
+      "id": 7
     }
   ]
 }
