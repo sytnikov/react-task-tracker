@@ -8,15 +8,9 @@
     },
     {
       "id": 2,
-     "text": "Clean the room",
+      "text": "Clean the room",
       "day": "Feb 6th at 6:30pm",
       "reminder": true
-    },
-    {
-      "id": 3,
-      "text": "Do the shopping",
-      "day": "Feb 8th at 8:00pm",
-      "reminder": false
     }
   ]
 }
