@@ -46,7 +46,11 @@ const App = () => {
   return (
     // you can have only one parent component (in this case it's div)
     <div className="container">
-      <Header title="Task Tracker" onAdd={() => setShowAddTask(!showAddTask)}/>
+      <Header
+        title="Task Tracker"
+        onAdd={() => setShowAddTask(!showAddTask)}
+        showAdd={showAddTask}
+      />
       {showAddTask && <AddTask onAdd={addTask}/>}
       {tasks.length > 0 ? <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder}/> : 'No tasks to show'}
     </div>
